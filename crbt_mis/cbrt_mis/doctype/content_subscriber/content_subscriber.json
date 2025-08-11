@@ -1,0 +1,115 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{content_id}-{subscriber_id}",
+ "creation": "2025-08-02 14:46:26.345581",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_ltof",
+  "amended_from",
+  "subscriber_id",
+  "content_id",
+  "tarrif_id",
+  "operation",
+  "date",
+  "artist",
+  "amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_ltof",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Content Subscriber",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "subscriber_id",
+   "fieldtype": "Link",
+   "label": "Subscriber Id",
+   "options": "Subscriber"
+  },
+  {
+   "fieldname": "content_id",
+   "fieldtype": "Link",
+   "label": "Content Id",
+   "options": "Artist Content"
+  },
+  {
+   "fieldname": "tarrif_id",
+   "fieldtype": "Link",
+   "label": "Tarrif Id",
+   "options": "Tarrif Plan"
+  },
+  {
+   "default": "Renewal",
+   "fieldname": "operation",
+   "fieldtype": "Select",
+   "label": "Operation",
+   "options": "Renewal\nActivation"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fetch_from": "content_id.artist",
+   "fieldname": "artist",
+   "fieldtype": "Data",
+   "label": "Artist"
+  },
+  {
+   "fetch_from": "tarrif_id.tarrif_rate",
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-08-11 15:49:23.183925",
+ "modified_by": "Administrator",
+ "module": "cbrt_mis",
+ "name": "Content Subscriber",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Artist",
+   "share": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

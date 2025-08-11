@@ -1,0 +1,69 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:content_id",
+ "creation": "2025-08-02 14:33:46.827573",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "content_id",
+  "content_title",
+  "song_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "content_id",
+   "fieldtype": "Data",
+   "label": "Content Id",
+   "unique": 1
+  },
+  {
+   "fieldname": "content_title",
+   "fieldtype": "Data",
+   "label": "Content Title"
+  },
+  {
+   "fieldname": "song_id",
+   "fieldtype": "Data",
+   "label": "Song Id"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-11 15:51:09.499170",
+ "modified_by": "Administrator",
+ "module": "cbrt_mis",
+ "name": "Content",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Artist",
+   "share": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "content_title"
+}

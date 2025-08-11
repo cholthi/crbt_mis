@@ -1,0 +1,62 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{artist}-{content_id}",
+ "creation": "2025-08-02 14:36:14.068498",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "artist",
+  "content_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "artist",
+   "fieldtype": "Link",
+   "label": "Artist",
+   "options": "Artist"
+  },
+  {
+   "fieldname": "content_id",
+   "fieldtype": "Link",
+   "label": "Content Id",
+   "options": "Content"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-11 15:49:59.894950",
+ "modified_by": "Administrator",
+ "module": "cbrt_mis",
+ "name": "Artist Content",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Artist",
+   "share": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

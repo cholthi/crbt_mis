@@ -1,0 +1,69 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-08-02 13:28:38.706542",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "mobile_money_section",
+  "momo_number",
+  "momo_name",
+  "bank_details_section",
+  "bank_name",
+  "account_name",
+  "account_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "mobile_money_section",
+   "fieldtype": "Section Break",
+   "label": "Mobile Money"
+  },
+  {
+   "fieldname": "momo_number",
+   "fieldtype": "Data",
+   "label": "Momo Number"
+  },
+  {
+   "fieldname": "momo_name",
+   "fieldtype": "Data",
+   "label": "Momo Name"
+  },
+  {
+   "fieldname": "bank_details_section",
+   "fieldtype": "Section Break",
+   "label": "Bank Details"
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "label": "Bank Name"
+  },
+  {
+   "fieldname": "account_name",
+   "fieldtype": "Data",
+   "label": "Account Name"
+  },
+  {
+   "fieldname": "account_number",
+   "fieldtype": "Data",
+   "label": "Account Number"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-08-02 13:31:30.816667",
+ "modified_by": "Administrator",
+ "module": "cbrt_mis",
+ "name": "Artist Payment Details",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
