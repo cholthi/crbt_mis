@@ -166,6 +166,14 @@ app_license = "mit"
 # 	],
 # }
 
+scheduler_events = {
+        "cron": {
+            "10 9 * * *": [
+                "app.scheduled_events.add_crbt_subscribers.add_crbt_subscribers"
+        ],
+     }
+}
+
 # Testing
 # -------
 
